@@ -9,6 +9,10 @@ repositories {
         name "CurseForge"
         url "https://minecraft.curseforge.com/api/maven/"
     }
+    maven {
+        name "minecraft-maven"
+        url "https://raw.githubusercontent.com/bluelightning32/minecraft-maven/master/"
+    }
 }
 
 dependencies {
@@ -19,6 +23,7 @@ dependencies {
     deobfProvided "spice-of-life-carrot-edition:solcarrot:${solcarrot_version}"
     deobfProvided "the-spice-of-life:SpiceOfLife:${spiceOfLive_version}"
     deobfProvided "com.github.glitchfiend.biomesoplenty:ToughAsNails:${minecraft_version}-${toughAsNails_version}:api"
+    deobfProvided "v0ids-smart-backpacks:V0id's Smart Backpacks:${v0ids_smart_backpacks_version}"
 
     testRuntime "org.spongepowered:spongecommon:${sponge_version}:dev"
 }

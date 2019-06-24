@@ -76,6 +76,11 @@ public class PermissionRegistry {
           PlayerSerializer.toughAsNailsSyncModule.getPermission(),
           "Allow this user's ToughAsNails stats to be synchronized",
           PermissionDescription.ROLE_USER);
+    if (PlayerSerializer.v0idsSmartBackpacksSyncModule.canBeEnabled())
+      registerPermission(
+          PlayerSerializer.v0idsSmartBackpacksSyncModule.getPermission(),
+          "Allow this user's equipped V0id's Smart Backpack to be synchronized",
+          PermissionDescription.ROLE_USER);
   }
 
   private Builder getBuilder() {
